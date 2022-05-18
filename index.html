@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 10px;
+      border-radius: 0;
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      padding: centre;
+    }
+    .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-right: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: black;
+    background-image: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 0px;
+      text-size-adjust: 200px;
+      height: 100%;
+      size: 1px;
+    }
+
+    .navbar h3{
+      font-size: 50px;
+      align-items: center;
+      text-align: center;
+      font-family:  'Times New Roman',  serif;
+    }
+    
+    .row.content h5{
+      font-size: 20px;
+      text-align: left;
+      background-color: #555;
+      color: white;
+    }
+    .row.content h1{
+      font-size: 40px;
+      text-align: left;
+    }
+    .row.content h2{
+      font-size: 20px;
+      text-align: left;
+    }
+    .row.content h6{
+      font-size: 20px;
+    }
+    .navbar h4{
+      font-size: 20px;
+      align-items: center;
+      text-align: center;
+      font-family:    serif;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 10px;
+      }
+      .row.content {height:auto;} 
+    }
+
+
+  </style>
+</head>
+<body>
+  
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    
+    <h3> THE DAILY DISH </h3>
+    <h4>mobile responsive & tastefully simple</h4>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+        
+        <li class="active"><a href="#">MY RECIPES</a></li>
+        <li><a href="#">TYPOGRAPHY</a></li>
+        <li><a href="#">SAMPLE PAGES</a></li>
+        <li><a href="#">PAGE LAYOUTS</a></li>
+        <li><a href="#">OUR SHOP</a></li>
+        <li><a href="#">CONTACT PAGE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-left" id="content">    
+  <div class="row content">
+    
+    <div class="col-sm-8  text-left"> 
+        <h5>Features</h5>
+        <h1>WELCOME TO OUR DELICIOUS TABLE</h1>
+        <h2>Allison Gardner.oct 2,2017.leave a comment</h2>
+        <img src="https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/gettyimages-sharing-food.jpg?itok=o_y4Rbqy" alt="" height="400px" width="700px"> 
+        
+      
+    </div>
+    
+    <div class="col-sm-2 sidenav">
+        <h5>About Me</h5>
+        <img src="https://i.pinimg.com/236x/b0/9c/28/b09c28f0c67e96a65c2ebce81b2e13c0--taking-pictures-profile-pictures.jpg" alt="" height="400px" width="400px" >
+        <h6>Hi there,I'm Allison.Food blogger.Wife. Coffee Drinker. Photographer.Read More.</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
